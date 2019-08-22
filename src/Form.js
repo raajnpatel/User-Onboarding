@@ -13,8 +13,10 @@ const LoginForm = ({errors, touched, values, status})=> {
     }, [status]);
 
     return (
-        <div>
+        <div className = "form-box">
             <Form className = "form-component">
+                Please fill in all fields!
+                <br/><br/><br/><br/>
                 {touched.name && errors.name}
                 <Field component = "input" type = "text" name = "name" placeholder = "Name"/>
                 <br/><br/>
